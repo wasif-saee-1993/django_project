@@ -1,0 +1,69 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# Django stuff
+*.log
+*.pot
+*.pyc
+db.sqlite3
+db.sqlite3-journal
+
+# Media and static files (if generated)
+media/
+staticfiles/
+static_root/
+static_cdn/
+
+# Local settings (if used)
+local_settings.py
+.env
+
+# Migrations (optional — include if you want to regenerate them per environment)
+**/migrations/
+!**/migrations/__init__.py
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# pipenv, poetry, etc.
+Pipfile.lock
+poetry.lock
+
+# pytest cache
+.pytest_cache/
+
+# Coverage reports
+htmlcov/
+.coverage
+.tox/
+coverage.xml
+
+# mypy
+.mypy_cache/
+.dmypy.json
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# DB
+db.sqlite3
+
+# Environment
+.env
+venv/

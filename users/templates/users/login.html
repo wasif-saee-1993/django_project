@@ -2,21 +2,19 @@
 {% load crispy_forms_tags %}
 {% block content %}
 <div class="card content-section">
-    <form method="POST" action="{% url 'register' %}" class="p-3">
+    <form method="POST" class="p-3">
         {% csrf_token %}
         <fieldset class="form-group">
-            <legend class="border-bottom mb-4">
-                Join Today
-            </legend>
+            <legend class="border-bottom mb-4">Login</legend>
             {{ form|crispy }}
         </fieldset>
-        <div class="form-group">
-            <input type="submit" class="btn btn-outline-info" value="Sign Up">
+        <div class="form-group pt-2">
+            <input type="submit" class="btn btn-outline-info" value="Sign In">
         </div>
     </form>
     <div class="border-top p-3">
         <small class="text-muted">
-            Already have an account? <a href="{% url 'login' %}" class="ml-2">Sign In</a>
+            Need An account? <a href="{% url 'register' %}" class="ml-2">Sign Up Now</a>
         </small>
     </div>
 </div>
